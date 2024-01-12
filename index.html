@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats Photo</title>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      body > main > img {
+        width: 300px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Cat Photography</h2>
+    <main>
+      <h3>Cats Photos</h3>
+      <!-- TODO: Add link to cat Photos -->
+      <p>
+        click to here to view more <a href="#" target="_blank">cat photos</a>.
+      </p>
+      <a href="#"
+        ><img
+          src="https://th.bing.com/th/id/OIP.g1m0K7yumfwkc_ub224a4AHaE7?w=212&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+          alt="A cute orange cat lying on its back."
+      /></a>
+      <h3>Cats Lists</h3>
+
+      <p>Things cats <em>love</em>:</p>
+      <ul>
+        <li>cats nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <img
+        src="https://cdn.freecodecamp.org/youtube/html-course/lasagna.jpg"
+        alt="lasagna"
+      />
+      <p>Things cats <strong>hate</strong>:</p>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+
+      <img
+        src="https://cdn.freecodecamp.org/youtube/html-course/cats.jpg"
+        alt="Cats"
+      />
+      <form action="/submit-cat-photo">
+        <label for="indoor"
+          ><input type="radio" name="indoor-outdoor" />indoor</label
+        ><br />
+        <label for="outdoor"
+          ><input type="radio" name="indoor-outdoor" />outdoor</label
+        ><br />
+        <label for="loving"
+          ><input
+            type="checkbox"
+            name="personality"
+            id="loving"
+            checked
+          />Loving</label
+        ><br />
+        <label for="lazy"
+          ><input
+            type="checkbox"
+            name="personality"
+            id="lazy"
+            checked
+          />Lazy</label
+        ><br />
+        <label for="energetic"
+          ><input
+            type="checkbox"
+            name="personality"
+            id="energetic"
+            checked
+          />Eneregetic</label
+        ><br />
+        <input type="text" placeholder="cat photo URL" required />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        <small>No cpyright - <a href="https://google.com"></a></small>
+      </p>
+    </footer>
+  </body>
+</html>
